@@ -46,4 +46,4 @@ Star this repo if you like it pls :).
 Enjoy!
 
 ## Bugs and other development information
-- [] VNC connection doesn't work as of now. Only noVNC works.
+ - [] VNC connection doesn't work as of now. Only noVNC works.
