@@ -7,6 +7,8 @@ It comes preinstalled with gdb pwndbg (run it using gdb)
 
 To access the server noVNC navigate to this [link](http://localhost:9020/vnc.html?resize=scale)
 
+The credentials are `root:kali`
+
 ## Usage
 
 Clone the repository to either your `Windows` or `Linux` and use the appropriate build script to install and run. After than you can either run the container through the docker GUI or use this command
@@ -36,6 +38,8 @@ Also this supports VNC so if that's your thing connect to VNC through port 9021.
 
 ## Personal Note
 Obviously this is not full featured but I tried to do what I can. If you want uncomment the line in the dockerfile if you want to install ghidra along with the rest of the stuff. 
+
+Obviously a lot of tools are missing so feel free to fork this and add what you like. I based this off of cryptocat's binary exploitation 101 videos.
 
 Star this repo if you like it pls :).
 

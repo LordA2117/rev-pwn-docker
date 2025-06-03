@@ -12,7 +12,7 @@ RUN apt update && apt install -y \
     gdb novnc websockify dbus-x11 \
     gnupg
 
-RUN apt install checksec python3-pwntools neovim
+RUN apt install -y checksec python3-pwntools neovim ropper
 
 RUN git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef.git /root/gdb-peda-pwndbg-gef && \
     /root/gdb-peda-pwndbg-gef/install.sh
