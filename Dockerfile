@@ -18,7 +18,7 @@ RUN git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef.git /root/gdb-pe
     /root/gdb-peda-pwndbg-gef/install.sh
 
 # Uncomment the next line if you wanna install ghidra
-# RUN apt install -y ghidra
+RUN apt install -y ghidra
 
 # VNC Password
 RUN mkdir -p /root/.vnc && \
@@ -35,6 +35,7 @@ RUN git clone https://github.com/novnc/noVNC.git /opt/novnc && \
 EXPOSE 5900 9020
 
 CMD bash -c "\
+    rm -rf /tmp/.X0-lock /tmp/.X11-unix/X0 && \
     vncserver :0 -geometry 1920x1080 -depth 16 -rfbauth /root/.vnc/passwd && \
     websockify --web=/opt/novnc 9020 localhost:5900 \
 "
