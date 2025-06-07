@@ -18,7 +18,7 @@ RUN git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef.git /root/gdb-pe
     /root/gdb-peda-pwndbg-gef/install.sh
 
 # Uncomment the next line if you wanna install ghidra
-RUN apt install -y ghidra
+RUN apt install -y ghidra metasploit-framework
 
 # VNC Password
 RUN mkdir -p /root/.vnc && \
